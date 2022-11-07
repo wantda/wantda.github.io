@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+@charset "utf-8";
+
+.box{width: 600px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;}
+.box > p{font-size: 20px; position: relative; top: -10%; left: 1%;}
+.box .search .s-box .bd-box{width: 600px; height: 50px; border: 1px solid #000; position: absolute; top: 22%;}
+.box .search .s-box .black-box{position: absolute; right: -2px; bottom: 27%; width: 80px; height: 50px; background-color: #000; color: #fff; line-height: 50px; text-align: center; cursor: pointer;}
+
+
+@media screen and (max-width: 640px){
+    .box{width: 500px; height: 70px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;}
+    .box > p{font-size: 16px;top: -13%;}
+    .box .search .s-box .bd-box{width: 500px; height: 50px; border: 1px solid #000; position: absolute; top: 22%;}
+.box .search .s-box .black-box{position: absolute; right: -2px; bottom: 6%; width: 80px; height: 50px; background-color: #000; color: #fff; line-height: 50px; text-align: center; cursor: pointer;}
+=======
+@charset "utf-8";
+
+.box{width: 600px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;}
+.box > p{font-size: 20px; position: relative; top: -10%; left: 1%;}
+.box .search .s-box .bd-box{width: 600px; height: 50px; border: 1px solid #000; position: absolute; top: 22%;}
+.box .search .s-box .black-box{position: absolute; right: -2px; bottom: 27%; width: 80px; height: 50px; background-color: #000; color: #fff; line-height: 50px; text-align: center; cursor: pointer;}
+
+
+@media screen and (max-width: 640px){
+    .box{width: 500px; height: 70px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;}
+    .box > p{font-size: 16px;top: -13%;}
+    .box .search .s-box .bd-box{width: 500px; height: 50px; border: 1px solid #000; position: absolute; top: 22%;}
+.box .search .s-box .black-box{position: absolute; right: -2px; bottom: 6%; width: 80px; height: 50px; background-color: #000; color: #fff; line-height: 50px; text-align: center; cursor: pointer;}
+>>>>>>> 22ee1a223e47e699e20bbc87ac67d52de37077bf
+}

@@ -1,0 +1,158 @@
+<<<<<<< HEAD
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal,;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-weight: 900;
+    font-style: normal;
+}
+*{margin: 0; padding: 0; font-family: 'S-CoreDream-3Light', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+.header{width: 200px; height: 50%; padding: 10px 0; position: fixed; top: 3%; left: 2.5%; z-index: 99;}
+.header .header-wrap{max-width: 100%; margin: 0 auto;}
+.header .logo{max-width: 150px; margin: 0 auto;}
+.header .logo a img{width: 100%;}
+.header .nav{width: 150px; display: flex; flex-direction: column; margin: 0 auto;}
+.header .nav ul{width: 120px; margin: 0 auto;}
+.header .nav ul li{width: 100px; margin-top: 30px;}
+.header .nav ul li p{font-weight: bold; margin-left: 20px; text-align: center;}
+.header .nav ul li img{width: 100%; transition: 0.5s;}
+.header .nav ul li:hover img{transform: translateX(15%); transition: 0.5s;}
+
+.m-btn{position: fixed; right: 20px; top: 20px; transition: 1s; z-index: 101; cursor: pointer; display: none;}
+
+.m-btn .line{width: 30px; height: 4px; background-color: #000; border-radius: 5px; margin: 5px; transition: 1s;}
+.m-btn .line:nth-child(2){width: 20px;}
+
+.m-btn.on .line:nth-child(1){transform: rotate(45deg) translateY(13px);}
+.m-btn.on .line:nth-child(2){opacity: 0;}
+.m-btn.on .line:nth-child(3){transform: rotate(-45deg) translateY(-13px);}
+
+.m-nav{position: fixed; width: 300px; height: 100%; background-color: #fff; right: -300px; z-index: 10000; top: 0; overflow: hidden; padding: 50px; box-sizing: border-box; transition: 0.5s; display: none;}
+.m-nav.on{right: 0;}
+.m-nav ul{margin-top: 50px;}
+.m-nav ul li{padding: 20px 0; border-bottom: 1px solid #000; font-size: 20px;}
+.m-nav ul li a{color: #000; font-family: 'S-CoreDream-9Black'; font-style: italic;}
+
+.footer{width: 100%; padding: 10px 0; position: fixed; bottom: 0;}
+.footer p{text-align: right; color: #5e5e5e; font-size: 11px;}
+
+.window{z-index: 9999; display: none; position: fixed; width: 100%;height: 100%; background-color: rgba(0,0,0,0.4); top: 0;}
+
+@media screen and (min-width: 641px) and (max-width: 1200px){
+    .header{width: 150px;}
+    .header .logo{max-width: 130px;}
+    .header .nav{width: 100px;}
+    .header .nav ul{width: 50px; margin-left: -10px;}
+}
+
+@media screen and (max-width: 640px){
+    .header{width: 100%; height: auto; padding:0; position: fixed; top: 0; background-color: #fff; left: 0;}
+    .header .header-wrap{width: 100%;}
+    .header .etc ul li{display: none;}
+    .header .nav{display: none;}
+    .header .header-wrap .logo{margin-left: 12px;}
+    .m-btn{display: block; z-index: 99999;}
+    .m-nav{display: block;}
+=======
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal,;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-weight: 900;
+    font-style: normal;
+}
+*{margin: 0; padding: 0; font-family: 'S-CoreDream-3Light', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+.header{width: 200px; height: 50%; padding: 10px 0; position: fixed; top: 3%; left: 2.5%; z-index: 99;}
+.header .header-wrap{max-width: 100%; margin: 0 auto;}
+.header .logo{max-width: 150px; margin: 0 auto;}
+.header .logo a img{width: 100%;}
+.header .nav{width: 150px; display: flex; flex-direction: column; margin: 0 auto;}
+.header .nav ul{width: 120px; margin: 0 auto;}
+.header .nav ul li{width: 100px; margin-top: 30px;}
+.header .nav ul li p{font-weight: bold; margin-left: 20px; text-align: center;}
+.header .nav ul li img{width: 100%; transition: 0.5s;}
+.header .nav ul li:hover img{transform: translateX(15%); transition: 0.5s;}
+
+.m-btn{position: fixed; right: 20px; top: 20px; transition: 1s; z-index: 101; cursor: pointer; display: none;}
+
+.m-btn .line{width: 30px; height: 4px; background-color: #000; border-radius: 5px; margin: 5px; transition: 1s;}
+.m-btn .line:nth-child(2){width: 20px;}
+
+.m-btn.on .line:nth-child(1){transform: rotate(45deg) translateY(13px);}
+.m-btn.on .line:nth-child(2){opacity: 0;}
+.m-btn.on .line:nth-child(3){transform: rotate(-45deg) translateY(-13px);}
+
+.m-nav{position: fixed; width: 300px; height: 100%; background-color: #fff; right: -300px; z-index: 10000; top: 0; overflow: hidden; padding: 50px; box-sizing: border-box; transition: 0.5s; display: none;}
+.m-nav.on{right: 0;}
+.m-nav ul{margin-top: 50px;}
+.m-nav ul li{padding: 20px 0; border-bottom: 1px solid #000; font-size: 20px;}
+.m-nav ul li a{color: #000; font-family: 'S-CoreDream-9Black'; font-style: italic;}
+
+.footer{width: 100%; padding: 10px 0; position: fixed; bottom: 0;}
+.footer p{text-align: right; color: #5e5e5e; font-size: 11px;}
+
+.window{z-index: 9999; display: none; position: fixed; width: 100%;height: 100%; background-color: rgba(0,0,0,0.4); top: 0;}
+
+@media screen and (min-width: 641px) and (max-width: 1200px){
+    .header{width: 150px;}
+    .header .logo{max-width: 130px;}
+    .header .nav{width: 100px;}
+    .header .nav ul{width: 50px; margin-left: -10px;}
+}
+
+@media screen and (max-width: 640px){
+    .header{width: 100%; height: auto; padding:0; position: fixed; top: 0; background-color: #fff; left: 0;}
+    .header .header-wrap{width: 100%;}
+    .header .etc ul li{display: none;}
+    .header .nav{display: none;}
+    .header .header-wrap .logo{margin-left: 12px;}
+    .m-btn{display: block; z-index: 99999;}
+    .m-nav{display: block;}
+>>>>>>> 22ee1a223e47e699e20bbc87ac67d52de37077bf
+}
